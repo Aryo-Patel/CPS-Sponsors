@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#que{
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.form{
+    margin: 15px;
+    border: 2px solid grey;
+}
+
+.image{
+    text-align: center;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+span{
+    border: 2px solid black;
+}
+
+.action{
+    text-align: center;
+}

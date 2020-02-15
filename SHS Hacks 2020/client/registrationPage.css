@@ -1,0 +1,72 @@
+#interests {
+    align-content: center;
+    margin: auto auto;
+}
+
+h4 {
+    font-family: Arial;
+    font-size: 18;
+}
+
+#firstInterest {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+#intHeader {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#stemDrop {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: lightgray;
+}
+
+#all {
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+#sportsDrop {
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+#academicDrop {
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+#communityDrop {
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+.dropdown {
+    width: 250px;
+    height: 50px;
+}
+
+#sportswrapper {
+    margin-left: 10px;
+}
+
+.drops {
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+    border-color: gray;
+}

@@ -18,7 +18,7 @@ const communitydrop = document.querySelector('#communityDrop')
 
 const interestSelect = document.querySelectorAll('.intclick')
 const selected = document.querySelector('#selectedInterests');
-let interestArr = ['']
+let interestArr = []
 
 let name = ''
 let username = ''
@@ -39,7 +39,7 @@ Array.from(interestSelect).forEach(dropdowns => {
         n.appendChild(t)
         selected.appendChild(n)
         console.log(selected.children)
-        interestArr.add('' + dropdowns.innerHTML)
+        interestArr.push(dropdowns.innerHTML)
     })
 });
 
@@ -47,5 +47,9 @@ submit.addEventListener('click', function(event) {
     name = nameForm.value
     username = usernameForm.value
     password = passwordForm.value
-
+    console.log(name + "," + username + ',' + password);
+    var information = {"password":'', "interests":'', "location":"Wilmette"};
+    information['password'] = password;
+    information['interests'] = interestArr;
+    localStorage.setItem(username, JSON.stringify(information));
 });

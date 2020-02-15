@@ -41,27 +41,6 @@ Array.from(interestSelect).forEach(dropdowns => {
     })
 });
 
-stemdrop.addEventListener('mouseover', function(event) {
-    stemwrap.style.display = 'block';
-});
-stemdrop.addEventListener('mouseout', function(event) {
-    stemwrap.style.display = 'none';
-});
-
-sportsdrop.addEventListener('mouseover', function(event) {
-    sportsdrop.style.display = 'block';
-});
-sportswrap.addEventListener('mouseout', function(event) {
-    sportswrap.style.display = 'none';
-});
-
-academicdrop.addEventListener('mouseover', function(event) {
-    academicwrap.style.display = 'block';
-});
-academicdrop.addEventListener('mouseout', function(event) {
-    academicwrap.style.display = 'none';
-});
-
 submit.addEventListener('click', function(event) {
     name = nameForm.value
     username = usernameForm.value

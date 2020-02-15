@@ -18,6 +18,7 @@ const communitydrop = document.querySelector('#communityDrop')
 
 const interestSelect = document.querySelectorAll('.intclick')
 const selected = document.querySelector('#selectedInterests');
+let interestArr = ['']
 
 let name = ''
 let username = ''
@@ -38,6 +39,7 @@ Array.from(interestSelect).forEach(dropdowns => {
         n.appendChild(t)
         selected.appendChild(n)
         console.log(selected.children)
+        interestArr.add('' + dropdowns.innerHTML)
     })
 });
 

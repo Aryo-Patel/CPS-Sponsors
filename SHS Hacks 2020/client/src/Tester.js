@@ -143,7 +143,7 @@ localStorage.setItem("McDonalds", JSON.stringify(information3));
 localStorage.setItem("Culvers", JSON.stringify(information4));
 localStorage.setItem("SHOP", JSON.stringify(information5));
 localStorage.setItem("MERK", JSON.stringify(information6));
-ocalStorage.setItem("KR", JSON.stringify(information7));
+localStorage.setItem("KR", JSON.stringify(information7));
 localStorage.setItem("NVDA", JSON.stringify(information8));
 localStorage.setItem("MSFT", JSON.stringify(information9));
 localStorage.setItem("RSG", JSON.stringify(information10));

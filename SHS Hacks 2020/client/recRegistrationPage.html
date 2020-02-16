@@ -1,0 +1,52 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <title>Registration</title>
+        <link rel='stylesheet' href='recRegistrationPage.css'>
+    </head>
+
+    <body>
+        <h3 id=log>Login Information</h3>
+        <form id=registration>
+            <div id=userPass>
+                <h4>Organization/Club Name</h4>
+                <input id=rname placeholder='Name...'> <br>
+                <h4>Affiliated School</h4>
+                <input id=rschool placeholder='Affiliated School...'> <br>
+                <h4>Username:</h4>
+                <input id=rusername placeholder='Username...'> <br>
+                <h4>Password</h4>
+                <input id=rpassword placeholder='Password...'> <br>
+            </div>
+        </form>
+        <h3 id=matching>Types of Donations</h3>
+        <div id=donations>
+            <div id=firstDonation>
+                <div id=donHead class=dropdown>
+                    <h4 id=donationHeader>Donation Types</h4>
+                </div>
+                <div id=donDropDown style=display:none>
+                    <div id=moneyDrop class=dropdown>
+                        <h4 id=moneyText class=intclick>Money</h4>
+                    </div>
+                    <div id=equipmentDrop class=dropdown>
+                        <h4 id=equipmentText class=intclick>Equipment</h4>
+                    </div>
+                    <div id=volunteerDrop class=dropdown>
+                        <h4 id=volunteerText class=intclick>Volunteers</h4>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id=selectedDonations>
+                <h5>Selections:</h5>
+            </div>
+        </div>
+        <button id=submit>Submit</button>
+
+        <script src='recRegistrationPage.js'></script>
+    </body>
+
+    </html>

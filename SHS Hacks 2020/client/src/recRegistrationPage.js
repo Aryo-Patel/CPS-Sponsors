@@ -27,6 +27,7 @@ const biography = document.querySelector('#bio').value
 
 let type = Array.from(document.querySelectorAll('.type'))
 let quant = Array.from(document.querySelectorAll('.quantity'))
+let isDonor = false;
 let donationArr = [
     ['donation'],
     ['type'],
@@ -119,8 +120,9 @@ submit.addEventListener('click', function(event) {
     Array.from(quant).forEach(quantity => {
         donationArr[2].push(quantity.value)
     })
-    var information = { "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
+    var information = { "isDonor": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
     information['password'] = rpassword;
+    information["isDonor"] = isDonor;
     information['donations'] = donationArr;
     information['interests'] = interestArr;
     information['email'] = remail;

@@ -1,1 +1,118 @@
-placeholder
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Main</title>
+	 <link rel="stylesheet" href="post.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a>Organ Donor</a>
+          </div>
+        <div id = "spacer"></div>  
+
+
+<!-- put this part in the left column div-->
+<div class="sidebox">
+	<a href="#" class="sideboxlink">home</a>
+	<div id="specialbreak"></div>
+
+	<a href="#" class="sideboxlink">my account</a>
+	<div id="specialbreak"></div>
+	<a href="#" class="sideboxlink">my messages</a>
+	<div id="specialbreak"></div>
+	<a href="#" class="sideboxlink">my </a>
+	<div id="specialbreak"></div>
+	<a href="#" class="sideboxlink">about the creators</a>
+	<div id="specialbreak"></div>
+</div>
+<div id = "post-holder">
+    <form id = "write-text">
+        <input id = "text-field" placeholder = "Post something!"/>
+        <button type = "button" id = "submit">Submit</button>
+    </form>
+    <ul id="postsection">
+        <li class="post"> 
+            <img src= "fillerimage.jpeg" width= "100%"></img>
+
+            <div id="postTitle">
+                Hey! I need X Thing
+            </div>
+            <div id="postText">
+                I am need things. this is a description of the things I need
+            </div>
+
+            <a href="#" id="postUser">
+                UserName
+            </a>
+        <br><br>
+            <a href="#" id="contact">
+                contact this person
+            </a><!-- mailto: with their email to directly contact -->
+        <br><br>
+        <!-- incl donor/reciever info and interests in the tags-->
+            <a href="#" id="tags">
+                tag1
+            </a>
+            <a href="#" id="tags">
+                tag2
+            </a>
+            <a href="#" id="tags">
+                tag3
+            </a>
+        </li>
+
+        <li class="post"> 
+            <img src= "fillerimage.jpeg" width= "100%"></img>
+
+            <div id="postTitle">
+                Hey! I need X Thing
+            </div>
+            <div id="postText">
+                I am need things. this is a description of the things I need
+            </div>
+
+            <a href="#" id="postUser">
+                UserName
+            </a>
+            <br><br>
+        <a href="#" id="contact">
+                contact this person
+            </a>
+
+        <br><br>
+        <!-- incl donor/reciever info and interests in the tags-->
+            <a href="#" id="tags">
+                tag4
+            </a>
+            <a href="#" id="tags">
+                tag5
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+            <a href="#" id="tags">
+                tag6
+            </a>
+        </li>
+    </ul>
+</div>
+
+        <script src = "/socket.io/socket.io.js"></script>
+        <script src = "src/client.js"></script>
+    </body>
+</html>

@@ -38,7 +38,7 @@ function addToList(e) {
         console.log(textAreaValue);
         console.log(typeof(submitTags[0]));
         console.log(`Submit tags before server ${submitTags}`);
-        let user = localStorage.getItem("currentUser");
+        let user = sessionStorage.getItem("currentUser");
         document.getElementById('text-area').value = '';
         tagHolder.forEach(tag => {
             tag.style.backgroundColor = '#e6e6e6';

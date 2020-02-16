@@ -80,5 +80,5 @@ submit.addEventListener('click', function(event) {
     information['street'] = street;
     information['twoaddress'] = twoaddress;
     localStorage.setItem(username, JSON.stringify(information));
-    window.location.href='LogInPage.html';
+    window.location.href = 'LogInPage.html';
 });

@@ -1,4 +1,4 @@
-var currentUsername = "IBM";
+var currentUsername = localStorage.getItem("currentUser");
 var interests = JSON.parse(localStorage.getItem(currentUsername))["interests"];
 
 var receiverInterests = [];
@@ -45,10 +45,10 @@ for (var i = 0; i < localStorage.length; i++){
             }
             console.log(cInt);
             
-            bio = JSON.parse(localStorage.getItem(currentUsername))["biography"];
+            bio = JSON.parse(localStorage.getItem(localStorage.key(i)))["biography"];
             address = JSON.parse(localStorage.getItem(localStorage.key(i)))["street"] + " " + JSON.parse(localStorage.getItem(localStorage.key(i)))["twoaddress"];
             email = JSON.parse(localStorage.getItem(localStorage.key(i)))["email"];
-            phonenum = JSON.parse(localStorage.getItem(localStorage.key(i)))["phone"];
+            phonenum = JSON.parse(localStorage.getItem(localStorage.key(i)))["phonenumber"];
             receivers[localStorage.key(i)] = numOfCommonInterests;
             var z = document.createElement("LI");
             var a = document.createTextNode("Name: " + localStorage.key(i));

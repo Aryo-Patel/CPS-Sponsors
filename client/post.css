@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+#write-text {
+    padding: 10px;
+    margin-top: -20px;
+    width: 65%;
+    text-align: left;
+    margin-left: 10%;
+    background: #f2f2f2;
+    box-shadow: inset;
+}
+
+span {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+#text-field {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#text-area {
+    width: 100%;
+    height: 100px;
+}
+
+.maintags:hover {
+    cursor: pointer;
+}
+
+.maintags {
+    transition: 0.25s;
+}
+
+.text-area {
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+}
+
+#submit {
+    font-weight: bold;
+    color: white;
+    background: #377099;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.post {
+    width: 100%;
+    background: #f2f2f2;
+    text-align: left;
+    padding: 2%;
+    position: relative;
+    transform: rotate(-180deg);
+    border-bottom: 3px solid #377099;
+    color: #262626;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 30%;
+}
+
+#postTitle {
+    padding: 15px;
+    font-size: 14px;
+}
+
+#postText {
+    padding: 10px;
+    font-size: 12px;
+}
+
+#postUser {
+    padding: 10px;
+    font-size: 12px;
+    color: #377099;
+    text-decoration: none;
+}
+
+#postUser:hover {
+    color: #66A2CC;
+}
+
+#tags {
+    background: #e6e6e6;
+    height: 2%;
+    width: auto;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #CC6866;
+    text-decoration: none;
+}
+
+.spacer {
+    height: 15px;
+    width: 100%;
+}
+
+.tags {
+    background: #e6e6e6;
+    height: 2%;
+    width: auto;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #CC6866;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#tags:hover {
+    color: #964C4B;
+}
+
+#contact {
+    background: #e6e6e6;
+    height: 2%;
+    width: auto;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #377099;
+    text-decoration: none;
+}
+
+#contact:hover {
+    color: #66A2CC
+}
+
+#postsection {
+    list-style: none;
+    transform: rotate(180deg);
+    position: relative;
+    z-index: 10;
+    width: 65%;
+    margin-left: 10%;
+}
+
+
+/* header*/
+
+#spacer {
+    height: 150px;
+}
+
+.topnav {
+    height: 60px;
+    left: 0px;
+    width: 100%;
+    background-color: #377099;
+    position: fixed;
+    /*border-bottom: 3px solid #377099;*/
+    color: #262626;
+    margin-top: -10px;
+    z-index: 20;
+}
+
+.topnav a {
+    margin-right: 7%;
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 8px;
+    margin-top: 15px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    margin-right: 100px;
+    padding: 8px 10px;
+    margin-top: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+
+/*side*/
+
+.sidebox {
+    height: 100%;
+    right: 0px;
+    width: 20%;
+    background-color: #f2f2f2;
+    position: fixed;
+    /*border: 3px solid #377099;*/
+    color: #262626;
+    z-index: 20;
+    top: 70px;
+    padding-top: -60px;
+}
+
+#specialbreak {
+    height: 50px;
+}
+
+.sideboxlink {
+    color: #CC6866;
+    font-size: 16px;
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    background: #e6e6e6;
+    text-decoration: none;
+}
+
+.sideboxlink:hover {
+    color: #964C4B;
+}
+
+.resize {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.MOVE {
+    margin-left: 15px;
+}

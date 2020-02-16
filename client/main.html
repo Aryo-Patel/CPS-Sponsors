@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a>Organ Donor</a>
+    </div>
+    <div id="spacer"></div>
+
+
+    <!-- put this part in the left column div-->
+    <div class="sidebox">
+        <a href="main.html" class="sideboxlink">Home</a>
+        <div id="specialbreak"></div>
+
+        <a href="MyAccount.html" class="sideboxlink">My Account</a>
+        <div id="specialbreak"></div>
+        <a href="#" id="connections" class="sideboxlink">My Connections</a>
+        <div id="specialbreak"></div>
+        <a href="about.html" class="sideboxlink">About the Creators</a>
+        <div id="specialbreak"></div>
+    </div>
+    <div id="post-holder">
+        <form id="write-text">
+            <input id="text-field" placeholder="Post something!" />
+            <textarea id="text-area" placeholder="Body"></textarea>
+            <div class="spacer"></div>
+            <span class="tags maintags">STEM</span>
+            <span class="tags maintags">Athletics</span>
+            <span class="tags maintags">Academic Clubs</span>
+            <span class="tags maintags">Community Clubs</span>
+            <span href="#" class="tags">General</span>
+            <button type="button" id="submit">Submit</button>
+        </form>
+        <ul id="postsection">
+
+        </ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+    <script src="src/connectionRedirection.js"></script>
+</body>
+
+</html>

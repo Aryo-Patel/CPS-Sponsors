@@ -7,52 +7,99 @@
     </head>
 
     <body>
-        <h3 id=log>Login Information</h3>
-        <form id=registration>
-            <div id=userPass>
-                <h4>Organization/Club Name</h4>
-                <input id=rname placeholder='Name...'> <br>
-                <h4>Affiliated School</h4>
-                <input id=rschool placeholder='Affiliated School...'> <br>
-                <h4>Username:</h4>
-                <input id=rusername placeholder='Username...'> <br>
-                <h4>Password</h4>
-                <input id=rpassword placeholder='Password...'> <br>
-                <h4>Email</h4>
-                <input id=remail placeholder='Email...'> <br>
-                <h4>Phone Number</h4>
-                <input id=rphonenumber placeholder='Phone Number...'> <br>
-                <h4>Address</h4>
-                <input id=rstreet placeholder='Street Address...'> <br>
-                <input id=rtwoaddress placeholder='City, State, Zip Code...'> <br>
-            </div>
-        </form>
-        <h3 id=matching>Types of Donations</h3>
-        <div id=donations>
-            <div id=firstDonation>
-                <div id=donHead class=dropdown>
-                    <h4 id=donationHeader>Donation Types</h4>
-                </div>
-                <div id=donDropDown style=display:none>
-                    <div id=moneyDrop class=dropdown>
-                        <h4 id=moneyText class=intclick>Money</h4>
-                    </div>
-                    <div id=equipmentDrop class=dropdown>
-                        <h4 id=equipmentText class=intclick>Equipment</h4>
-                    </div>
-                    <div id=volunteerDrop class=dropdown>
-                        <h4 id=volunteerText class=intclick>Volunteers</h4>
+        <div class="grid-container">
+            <div class="item1">Registration</div>
+            <div class="item2">
+                <h2 id=log>Login Information</h2>
+                <form id=registration>
+                    <div id=userPass>
+                        <h4 id=mobile>Organization/Club Name</h4>
+                        <input id=rname placeholder='Name...' class='userpassform' type=text> <br>
 
+                        <h4>Affiliated School</h4>
+                        <input id=rschool placeholder='Affiliated School...' class='userpassform' type=text> <br>
+
+                        <h4>Username:</h4>
+                        <input id=rusername placeholder='Username...' class='userpassform' type=text> <br>
+
+                        <h4>Password</h4>
+                        <input id=rpassword placeholder='Password...' class='userpassform' type=text> <br>
+
+                        <h4>Email</h4>
+                        <input id=remail placeholder='Email...' class='userpassform' type=text> <br>
+
+                        <h4>Phone Number</h4>
+                        <input id=rphonenumber placeholder='Phone Number...' class='userpassform' type=text> <br>
+
+                        <h4>Address</h4>
+                        <input id=rstreet placeholder='Street Address...' class='userpassform' type=text> <br>
+                        <input id=rtwoaddress placeholder='City, State, Zip Code...' class='userpassform' type=text>
+                        <br>
+
+                        <h4>Biography of Organization</h4>
+                        <textarea id=bio placeholder='Type your biography here...' rows='4' cols='50' type=text> </textarea><br>
                     </div>
-                </div>
+                </form>
 
             </div>
-            <div id=selectedDonations>
-                <h5>Selections:</h5>
+            <div class="item3">
+                <h2 id=log2>Donation Information</h2>
+                <div id=donations>
+                    <div id=firstDonation>
+                        <div id=donHead>
+                            <h3 id=donationHeader>Select Types of Support</h3>
+                        </div>
+                        <div id=donDropDown>
+                            <div id=moneyDrop class=dropdown>
+                                <h4 id=moneyText class=intclick>Money</h4>
+                            </div>
+                            <div id=equipmentDrop class=dropdown>
+                                <h4 id=equipmentText class=intclick>Equipment</h4>
+                            </div>
+                            <div id=volunteerDrop class=dropdown>
+                                <h4 id=volunteerText class=intclick>Volunteers</h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id=selectedDonations>
+                        <h5>Selections:</h5>
+                    </div>
+                </div>
+                <div id=interests>
+                    <div id=firstInterest>
+                        <h4 id=interesthead>Pick Category(s)</h4>
+
+
+
+                        <div id=intDropDown>
+
+                            <h4 id=alltext class=donclick>Undecided</h4>
+
+
+                            <h4 id=stemtext class=donclick>STEM Clubs</h4>
+
+
+                            <h4 id=sportsText class=donclick>Athletics</h4>
+
+
+                            <h4 id=academicText class=donclick>Academic Clubs</h4>
+
+
+                            <h4 id=communityText class=donclick>Community Clubs</h4>
+
+
+                        </div>
+
+                        <div id=selectedInterests>
+                            <h5>Selections:</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="item4"><button id=submit>Submit</button></div>
         </div>
-        <button id=submit>Submit</button>
-
         <script src='recRegistrationPage.js'></script>
     </body>
 

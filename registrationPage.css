@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+    background: white;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.userpassform {
+    text-align: center;
+}
+
+.item1 {
+    grid-area: header;
+    color: #CC6866;
+}
+
+.item2 {
+    grid-area: left;
+}
+
+.item3 {
+    grid-area: right;
+}
+
+.item4 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'left left left right right right' 'footer footer footer footer footer footer';
+    grid-gap: 6px;
+    background-color: #e6e6e6;
+    grid-auto-columns: 1fr;
+    padding: 0px;
+}
+
+.grid-container>div {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+#mobile {
+    padding-top: 25px;
+}
+
+div.container {
+    width: 900px;
+    height: 610px;
+    margin: 35px auto;
+}
+
+input[type=text],
+input[type=password] {
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#bio {
+    width: 78%;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#interests {
+    align-content: center;
+    margin: auto auto;
+}
+
+#interesthead {
+    padding-top: 15px;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: normal;
+    color: #CC6866;
+    margin: 10px;
+}
+
+h4 {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: normal;
+    color: #377099;
+    margin: 10px;
+}
+
+#firstInterest {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+#intHeader {
+    background: #e6e6e6;
+    padding: 5px;
+}
+
+#stemDrop {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: lightgray;
+}
+
+.dropdown {
+    width: 250px;
+    height: 50px;
+}
+
+.drops {
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+.intclick {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 20px;
+    background: #e6e6e6;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+#submit {
+    color: white;
+    background: #CC6866;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+#selectedInterests {
+    font-size: 20px;
+}
+
+#submit:hover {
+    background: #964C4B;
+}

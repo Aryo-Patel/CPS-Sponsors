@@ -98,7 +98,14 @@ Array.from(interestSelect).forEach(dropdowns => {
 
 let quantcounter = 0;
 let typecounter = 0;
+let halt = false;
 submit.addEventListener('click', function(event) {
+    if (quant.length == 0) {
+        halt = true;
+        alert('Please select a donation type')
+    }
+    type = Array.from(document.querySelectorAll('.type'))
+    quant = Array.from(document.querySelectorAll('.quantity'))
     rname = nameForm.value
     rusername = usernameForm.value
     rpassword = passwordForm.value
@@ -107,7 +114,7 @@ submit.addEventListener('click', function(event) {
     rstreet = streetForm.value
     rtwoaddress = twoaddressForm.value
     for (i = 0; i < quant.length; i++) {
-        console.log(type[i - quantcounter + typecounter].value)
+
         if (quant[i].parentNode.previousElementSibling.innerHTML == 'Money') {
             donationArr[1].push(null)
 
@@ -135,6 +142,8 @@ submit.addEventListener('click', function(event) {
     information['biography'] = biography
     localStorage.setItem(rusername, JSON.stringify(information));
     console.log(information);
-    window.location.href='LogInPage.html';
+    if (!halt) {
+        window.location.href = 'LogInPage.html';
+    }
 });
 /** alex */

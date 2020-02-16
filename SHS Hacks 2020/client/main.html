@@ -1,117 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>Main</title>
-	 <link rel="stylesheet" href="post.css">
-    </head>
-    <body>
-        <div class="topnav">
-            <a>Synccess</a>
-          </div>
-        <div id = "spacer"></div>  
+    <link rel="stylesheet" href="post.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a>Organ Donor</a>
+    </div>
+    <div id="spacer"></div>
 
 
-<!-- put this part in the left column div-->
-<div class="sidebox">
-	<a href="main.html" class="sideboxlink">Home</a>
-	<div id="specialbreak"></div>
+    <!-- put this part in the left column div-->
+    <div class="sidebox">
+        <a href="main.html" class="sideboxlink">Home</a>
+        <div id="specialbreak"></div>
 
-	<a href="MyAccount.html" class="sideboxlink">My Account</a>
-	<div id="specialbreak"></div>
-	<a href="#" id="connections" class="sideboxlink">My Connections</a>
-	<div id="specialbreak"></div>
-	<a href="about.html" class="sideboxlink">About the Creators</a>
-	<div id="specialbreak"></div>
-</div>
-<div id = "post-holder">
-    <form id = "write-text">
-        <input id = "text-field" placeholder = "Post something!"/>
-        <button type = "button" id = "submit">Submit</button>
-    </form>
-    <ul id="postsection">
-        <li class="post"> 
-            <img src= "fillerimage.jpeg" width= "100%"></img>
+        <a href="MyAccount.html" class="sideboxlink">My Account</a>
+        <div id="specialbreak"></div>
+        <a href="#" id="connections" class="sideboxlink">My Connections</a>
+        <div id="specialbreak"></div>
+        <a href="about.html" class="sideboxlink">About the Creators</a>
+        <div id="specialbreak"></div>
+    </div>
+    <div id="post-holder">
+        <form id="write-text">
+            <input id="text-field" placeholder="Post something!" />
+            <textarea id="text-area" placeholder="Body"></textarea>
+            <div class="spacer"></div>
+            <span class="tags maintags">STEM</span>
+            <span class="tags maintags">Athletics</span>
+            <span class="tags maintags">Academic Clubs</span>
+            <span class="tags maintags">Community Clubs</span>
+            <span href="#" class="tags">General</span>
+            <button type="button" id="submit">Submit</button>
+        </form>
+        <ul id="postsection">
+            <li class="post">
+                <img src="fillerimage.jpeg" width="100%"></img>
 
-            <div id="postTitle">
-                Hey! I need X Thing
-            </div>
-            <div id="postText">
-                I am need things. this is a description of the things I need
-            </div>
+                <div id="postTitle">
+                    Hey! I need X Thing
+                </div>
+                <div id="postText">
+                    I am need things. this is a description of the things I need
+                </div>
 
-            <a href="#" id="postUser">
+                <a href="#" id="postUser">
                 UserName
             </a>
-        <br><br>
-            <a href="#" id="contact">
+                <br><br>
+                <a href="#" id="contact">
                 contact this person
-            </a><!-- mailto: with their email to directly contact -->
-        <br><br>
-        <!-- incl donor/reciever info and interests in the tags-->
-            <a href="#" id="tags">
+            </a>
+                <!-- mailto: with their email to directly contact -->
+                <br><br>
+                <!-- incl donor/reciever info and interests in the tags-->
+                <a href="#" id="tags">
                 tag1
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag2
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag3
             </a>
-        </li>
+            </li>
 
-        <li class="post"> 
-            <img src= "fillerimage.jpeg" width= "100%"></img>
+            <li class="post">
+                <img src="fillerimage.jpeg" width="100%"></img>
 
-            <div id="postTitle">
-                Hey! I need X Thing
-            </div>
-            <div id="postText">
-                I am need things. this is a description of the things I need
-            </div>
+                <div id="postTitle">
+                    Hey! I need X Thing
+                </div>
+                <div id="postText">
+                    I am need things. this is a description of the things I need
+                </div>
 
-            <a href="#" id="postUser">
+                <a href="#" id="postUser">
                 UserName
             </a>
-            <br><br>
-        <a href="#" id="contact">
+                <br><br>
+                <a href="#" id="contact">
                 contact this person
             </a>
 
-        <br><br>
-        <!-- incl donor/reciever info and interests in the tags-->
-            <a href="#" id="tags">
+                <br><br>
+                <!-- incl donor/reciever info and interests in the tags-->
+                <a href="#" id="tags">
                 tag4
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag5
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-            <a href="#" id="tags">
+                <a href="#" id="tags">
                 tag6
             </a>
-        </li>
-    </ul>
-</div>
+            </li>
+        </ul>
+    </div>
 
-        <script src = "/socket.io/socket.io.js"></script>
-        <script src = "src/client.js"></script>
-	<script src = "src/connectionRedirection.js"></script>
-    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+    <script src="src/connectionRedirection.js"></script>
+</body>
+
 </html>

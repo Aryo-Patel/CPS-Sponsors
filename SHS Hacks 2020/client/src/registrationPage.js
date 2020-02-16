@@ -34,13 +34,7 @@ let phonenumber = ''
 let street = ''
 let twoaddress = ''
     //overalldropdown
-interestsWrap.addEventListener('mouseover', function(event) {
-    dropContent.style.display = 'block';
-});
 
-interestsWrap.addEventListener('mouseout', function(event) {
-    dropContent.style.display = 'none';
-});
 
 Array.from(interestSelect).forEach(dropdowns => {
     dropdowns.addEventListener('click', function(event) {
@@ -73,7 +67,7 @@ submit.addEventListener('click', function(event) {
     name = nameForm.value
     username = usernameForm.value
     password = passwordForm.value
-    var information = {"isDonor":"true", "password": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '' };
+    var information = { "password": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '' };
     information['password'] = password;
     information['interests'] = interestArr;
     information['email'] = email;

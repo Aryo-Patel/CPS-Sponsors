@@ -145,5 +145,6 @@ submit.addEventListener('click', function(event) {
     if (!halt) {
         window.location.href = 'LogInPage.html';
     }
+    halt = false;
 });
 /** alex */

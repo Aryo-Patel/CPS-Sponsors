@@ -73,7 +73,7 @@ a{
     width:auto;
 
     padding:7px;
-    margin:12px;
+    margin:16px;
 
     font-size: 20px;
     color:#CC6866;
@@ -81,6 +81,10 @@ a{
 
     position:relative;
     top:12px;
+
+    border-style: solid;
+    border-radius: 14px;
+    border-color: transparent;
 
 }
 
@@ -90,5 +94,5 @@ a{
 }
 
 #specialbreak{
-    height:20px;
+    height:25px;
 }

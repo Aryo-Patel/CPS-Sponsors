@@ -5,6 +5,8 @@ var sponsorInterests = [];
 var commonInterests = [];
 var numOfCommonInterests = 0;
 var sponsors = {};
+var location;
+var email;
 
 
 console.log(JSON.parse(localStorage.getItem(localStorage.key(0)))["isDonor"]);
@@ -31,9 +33,12 @@ for (var i = 0; i < localStorage.length; i++){
                 }
             }
         }
+        location = JSON.parse(localStorage.getItem(localStorage.key(i)))["street"] + " " + JSON.parse(localStorage.getItem(localStorage.key(i)))["twoaddress"];
+        email = JSON.parse(localStorage.getItem(localStorage.key(i)))["email"];
+        phonenum = JSON.parse(localStorage.getItem(localStorage.key(i)))["phone"];
         sponsors[localStorage.key(i)] = numOfCommonInterests;
         var z = document.createElement("LI");
-        var t = document.createTextNode(localStorage.key(i) +" | # of Common Interests: " + numOfCommonInterests);
+        var t = document.createTextNode(localStorage.key(i) +" | # of Common Interests: " + numOfCommonInterests + " | Email: " + email + " | Address: " + location + " | Phone Number: " + phonenum);
         z.appendChild(t);
         document.getElementById("myList").appendChild(z);
 

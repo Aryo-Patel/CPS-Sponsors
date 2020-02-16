@@ -2,6 +2,10 @@ const submit = document.querySelector('#submit')
 const usernameForm = document.querySelector('#rusername')
 const nameForm = document.querySelector('#rname')
 const passwordForm = document.querySelector('#rpassword')
+const emailForm = document.querySelector('#remail')
+const phonenumberForm = document.querySelector('#rphonenumber')
+const streetForm = document.querySelector('#rstreet')
+const twoaddressForm = document.querySelector('#rtwoaddress')
 const intHeader = document.querySelector('#donHeader')
 const donationsWrap = document.querySelector('#firstDonation')
 const dropContent = document.querySelector('#donDropDown')
@@ -29,6 +33,10 @@ let donationArr = [
 let rname = ''
 let rusername = ''
 let rpassword = ''
+let remail = ''
+let rphonenumber = ''
+let rstreet = ''
+let rtwoaddress = ''
     //overalldropdown
 donationsWrap.addEventListener('mouseover', function(event) {
     dropContent.style.display = 'block';
@@ -52,7 +60,7 @@ Array.from(donationSelect).forEach(dropdowns => {
             x.appendChild(t)
         }
         let l = document.createElement('INPUT')
-        l.setAttribute("placeholder", "Quantity")
+        l.setAttribute("placeholder", "Quantity...")
         l.setAttribute("type", "text")
         l.setAttribute("class", "quantity")
         x.appendChild(l)
@@ -70,6 +78,10 @@ submit.addEventListener('click', function(event) {
     rname = nameForm.value
     rusername = usernameForm.value
     rpassword = passwordForm.value
+    remail = emailForm.value
+    rphonenumber = phonenumberForm.value
+    rstreet = streetForm.value
+    rtwoaddress = twoaddress.value
     for (i = 0; i < quant.length; i++) {
         console.log(type[i - quantcounter + typecounter].value)
         if (quant[i].parentNode.previousElementSibling.innerHTML == 'Money') {
@@ -85,9 +97,4 @@ submit.addEventListener('click', function(event) {
     Array.from(quant).forEach(quantity => {
         donationArr[2].push(quantity.value)
     })
-    console.log(donationArr[0][0] + ' ' + donationArr[1][0] + ' ' + donationArr[2][0])
-    console.log(donationArr[0][1] + ' ' + donationArr[1][1] + ' ' + donationArr[2][1])
-    console.log(donationArr[0][2] + ' ' + donationArr[1][2] + ' ' + donationArr[2][2])
-    console.log(donationArr[0][3] + ' ' + donationArr[1][3] + ' ' + donationArr[2][3])
-    console.log(donationArr[0][4] + ' ' + donationArr[1][4] + ' ' + donationArr[2][4])
 });

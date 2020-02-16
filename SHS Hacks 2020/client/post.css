@@ -14,6 +14,14 @@ body{
     text-align: left;
     margin-left: 10%;
 }
+span{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+img{
+    border-radius: 50%;
+    width: 60px;
+}
 #text-field{
     display: block;
     padding: 10px;

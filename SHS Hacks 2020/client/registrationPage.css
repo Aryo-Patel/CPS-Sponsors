@@ -140,7 +140,7 @@ h4 {
     padding: 5px;
     border-style: solid;
     border-radius: 15px;
-    border-color: black;
+    border-color: transparent;
 }
 
 #submit {
@@ -148,11 +148,14 @@ h4 {
     background: #CC6866;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: transparent;
 }
 
 #selectedInterests {

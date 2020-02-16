@@ -20,7 +20,10 @@ const equipmentDrop = document.querySelector('#equipmentDrop')
 const volunteerDrop = document.querySelector('#volunteerDrop')
 
 const donationSelect = document.querySelectorAll('.intclick')
+const interestSelect = document.querySelectorAll('.donclick')
+const selectedInt = document.querySelector('#selectedInterests');
 const selected = document.querySelector('#selectedDonations');
+const biography = document.querySelector('#bio').value
 
 let type = Array.from(document.querySelectorAll('.type'))
 let quant = Array.from(document.querySelectorAll('.quantity'))
@@ -29,6 +32,9 @@ let donationArr = [
     ['type'],
     ['quantity']
 ]
+let interestArr = []
+let checkArr = []
+let toggle = false;
 
 let rname = ''
 let rusername = ''
@@ -38,13 +44,6 @@ let rphonenumber = ''
 let rstreet = ''
 let rtwoaddress = ''
     //overalldropdown
-donationsWrap.addEventListener('mouseover', function(event) {
-    dropContent.style.display = 'block';
-});
-
-donationsWrap.addEventListener('mouseout', function(event) {
-    dropContent.style.display = 'none';
-});
 
 Array.from(donationSelect).forEach(dropdowns => {
     dropdowns.addEventListener('click', function(event) {
@@ -72,6 +71,29 @@ Array.from(donationSelect).forEach(dropdowns => {
     })
 });
 
+Array.from(interestSelect).forEach(dropdowns => {
+    dropdowns.addEventListener('click', function(event) {
+        console.log('beginning' + toggle)
+        for (i = 0; i < checkArr.length; i++) {
+            if (checkArr[i] == dropdowns.innerHTML) {
+                toggle = true;
+            }
+        }
+        if (!toggle) {
+            console.log(checkArr)
+            let n = document.createElement('P')
+            let t = document.createTextNode('' + dropdowns.innerHTML);
+            n.appendChild(t)
+            selectedInt.appendChild(n)
+
+            interestArr.push('' + dropdowns.innerHTML)
+            checkArr.push(dropdowns.innerHTML)
+        }
+        toggle = false;
+        console.log('ending' + toggle)
+    })
+});
+
 let quantcounter = 0;
 let typecounter = 0;
 submit.addEventListener('click', function(event) {
@@ -81,7 +103,7 @@ submit.addEventListener('click', function(event) {
     remail = emailForm.value
     rphonenumber = phonenumberForm.value
     rstreet = streetForm.value
-    rtwoaddress = twoaddress.value
+    rtwoaddress = twoaddressForm.value
     for (i = 0; i < quant.length; i++) {
         console.log(type[i - quantcounter + typecounter].value)
         if (quant[i].parentNode.previousElementSibling.innerHTML == 'Money') {
@@ -97,4 +119,16 @@ submit.addEventListener('click', function(event) {
     Array.from(quant).forEach(quantity => {
         donationArr[2].push(quantity.value)
     })
+    var information = { "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
+    information['password'] = rpassword;
+    information['donations'] = donationArr;
+    information['interests'] = interestArr;
+    information['email'] = remail;
+    information['phonenumber'] = rphonenumber;
+    information['street'] = rstreet;
+    information['twoaddress'] = rtwoaddress;
+    information['biography'] = biography
+    localStorage.setItem(rusername, JSON.stringify(information));
+    console.log(information)
 });
+/** alex */

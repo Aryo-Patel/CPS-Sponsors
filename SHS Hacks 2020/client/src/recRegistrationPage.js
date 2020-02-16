@@ -135,6 +135,6 @@ submit.addEventListener('click', function(event) {
     information['biography'] = biography
     localStorage.setItem(rusername, JSON.stringify(information));
     console.log(information);
-    window.location.href='LogInPage';
+    window.location.href='LogInPage.html';
 });
 /** alex */

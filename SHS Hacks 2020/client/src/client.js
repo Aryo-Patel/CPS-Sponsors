@@ -1,6 +1,8 @@
 let postText = document.getElementById('text-field');
 let btn = document.getElementById('submit');
 let form = document.getElementById('write-text');
+localStorage.getItem
+let arr = []
 const sock = io();
 
 form.addEventListener('submit', e =>{
@@ -13,6 +15,8 @@ btn.addEventListener('click', addToList);
 function addToList(e){
     console.log('click fired');
     let text = postText.value;
+    arr.push(text);
+    localStorage.setItem("Messages", JSON.stringify(arr));
     if(text !== ''){
         postText.value = '';
 

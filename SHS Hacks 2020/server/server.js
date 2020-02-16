@@ -35,11 +35,14 @@ const io = socketio(server);
 
 
 io.on('connection', (socket) => {
-    socket.emit('message', "You are connected");
+    //   socket.emit('message', "You are connected");
 
-    socket.on('textToWrite', (text, user) => {
-        console.log('text ran');
-        io.emit('message', text, user);
+    socket.on('textToWrite', (text, user, submitTags, textAreaValue) => {
+        if (text !== '') {
+            console.log('text ran');
+            console.log(submitTags);
+            io.emit('message', text, user, submitTags, textAreaValue);
+        }
     });
 
 });

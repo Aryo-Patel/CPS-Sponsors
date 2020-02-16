@@ -5,6 +5,7 @@ const passwordForm = document.querySelector('#rpassword')
 const emailForm = document.querySelector('#remail')
 const phonenumberForm = document.querySelector('#rphonenumber')
 const streetForm = document.querySelector('#rstreet')
+const schoolForm = document.querySelector('#rschool')
 const twoaddressForm = document.querySelector('#rtwoaddress')
 const intHeader = document.querySelector('#donHeader')
 const donationsWrap = document.querySelector('#firstDonation')
@@ -120,8 +121,9 @@ submit.addEventListener('click', function(event) {
     Array.from(quant).forEach(quantity => {
         donationArr[2].push(quantity.value)
     })
-    var information = { "isDonor": '', "name": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
+    var information = { "isDonor": '', "name": '', "school": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
     information['password'] = rpassword;
+    information['school'] = rschool;
     information["name"] = rname;
     information["isDonor"] = isDonor;
     information['donations'] = donationArr;

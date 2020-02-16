@@ -6,6 +6,7 @@ const emailForm = document.querySelector('#email')
 const phonenumberForm = document.querySelector('#phonenumber')
 const streetForm = document.querySelector('#street')
 const twoaddressForm = document.querySelector('#twoaddress')
+const biography = document.querySelector('#bio').value
 const intHeader = document.querySelector('#intHeader')
 const interestsWrap = document.querySelector('#firstInterest')
 const dropContent = document.querySelector('#intDropDown')
@@ -67,13 +68,14 @@ submit.addEventListener('click', function(event) {
     name = nameForm.value
     username = usernameForm.value
     password = passwordForm.value
-    var information = { "isDonor": '', "name": '', "password": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '' };
+    var information = { "isDonor": '', "name": '', "password": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
     information['password'] = password;
     information["name"] = name;
     information["isDonor"] = isDonor;
     information['interests'] = interestArr;
     information['email'] = email;
     information['phonenumber'] = phonenumber;
+    information['biography'] = biography
     information['street'] = street;
     information['twoaddress'] = twoaddress;
     localStorage.setItem(username, JSON.stringify(information));

@@ -34,19 +34,20 @@ const io = socketio(server);
 
 
 
-io.on('connection', (socket) =>{
+io.on('connection', (socket) => {
     socket.emit('message', "You are connected");
 
-    socket.on('textToWrite', text =>{
+    socket.on('textToWrite', (text, user) => {
         console.log('text ran');
-        io.emit('message', text);
-    })
+        io.emit('message', text, user);
+    });
+
 });
 
-server.on('error', (err) =>{
+server.on('error', (err) => {
     console.error('Server error:', err);
 });
 
-server.listen(8080, () =>{
+server.listen(8080, () => {
     console.log('RPS started on 8080');
 });

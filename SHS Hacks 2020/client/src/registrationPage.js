@@ -25,6 +25,7 @@ const interestSelect = document.querySelectorAll('.intclick')
 const selected = document.querySelector('#selectedInterests');
 let interestArr = []
 let checkArr = []
+let isDonor = 'true'
 let toggle = false;
 
 let name = ''

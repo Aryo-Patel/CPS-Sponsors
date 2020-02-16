@@ -28,7 +28,7 @@ const biography = document.querySelector('#bio').value
 
 let type = Array.from(document.querySelectorAll('.type'))
 let quant = Array.from(document.querySelectorAll('.quantity'))
-let isDonor = false;
+let isDonor = 'false';
 let donationArr = [
     ['donation'],
     ['type'],

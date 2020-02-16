@@ -1,61 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
 	background: white;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-
 }
-#write-text{
-    margin-top: -20px;
-    width: 65%;
-    text-align: left;
-    margin-left: 10%;
+#myList {
+    color:rgb(9, 87, 32);
+    font-size: 16px;
 }
-span{
-    margin-bottom: 10px;
-    font-style: italic;
-}
-img{
-    border-radius: 50%;
-    width: 60px;
-}
-#text-field{
-    display: block;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.2em;
-
-}
-#submit{
-    font-weight: bold;
-    color: white;
-    background: #377099;
-    font-size: 1.2em;
-    padding: 22px;
-    border-radius: 25%;
+#entu{
+    color:rgb(9, 87, 32);
+    font-size: 26px;
 }
 
-#submit:hover{
-    cursor: pointer;
-}
-.post {
-	width:100%;
+#post {
+	width:65%;
 	background: #f2f2f2;
 	text-align: left;
 	padding: 2%;
 	position: relative;
-    transform: rotate(-180deg);
+
 	border-bottom: 3px solid #377099;
 	color:#262626;
 	margin-top: 20px;
-	margin-left: 0;
-    margin-right: 30%;
-    
+	margin-left: 5%;
+	margin-right:5%;
 }
 
 #postTitle{
@@ -72,7 +39,7 @@ img{
 
 #postUser{
 
-	padding:10px;
+	padding:5px;
 	font-size: 12px;
 	color:#377099;
 	text-decoration: none;
@@ -118,20 +85,62 @@ img{
 #contact:hover{
 	color:#66A2CC
 }
+
+#UserPic{
+	background:red;
+	height:40px;
+	width:40px;
+	border: 0px solid transparent;
+  	border-radius: 20px;
+}
+
+/*ACCOUNT HEADER STUFF HERE*/
+
 #postsection{
-    list-style: none;
-    transform: rotate(180deg);
 	position:relative;
-    z-index:10;
-    width: 65%;
-    margin-left: 10%;
+	top:70px;
+	z-index:10;
 }
 
-/* header*/
+#header1{
+	width:65%;
+	max-width: 700px;
+	height: auto;
+	background: #f2f2f2;
+	text-align: left;
+	padding: 2%;
 
-#spacer{
-    height: 150px;
+	border-bottom: 6px solid #CC6866;
+	color:#262626;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right:5%;
 }
+
+#headUsername{
+	font-size:36px;
+	margin:20px;
+}
+#headBio{
+	font-size:14px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:20px;
+
+}
+
+#headUserPic{
+	background:red;
+
+	margin-bottom:5px;
+
+	height:70px;
+	width:70px;
+	border: 0px solid transparent;
+  	border-radius: 35px;
+}
+/*header*/
+
 .topnav {
 	height: 60px;
 	left:0px;
@@ -143,16 +152,15 @@ img{
 	color:#262626;
 
 
-	margin-top:-10px;
+	margin-top:-20px;
 	z-index:20;
 
   }
-  
-  .topnav a {
+
+.topnav a {
 	margin-right: 7%;
 	float: right;
 	display: block;
-	color: black;
 	text-align: center;
 	
 	padding:10px 15px;
@@ -160,33 +168,20 @@ img{
 	font-weight:bold;
 	color:white ;
   }
-  
-  .topnav .search-container {
-	float: right;
-  }
-  
-  .topnav input[type=text] {
-	padding: 8px;
-	margin-top: 15px;
-	font-size: 17px;
-	border: none;
-  }
-  
-  .topnav .search-container button {
-	margin-right: 100px;
-	padding: 8px 10px;
-	margin-top: 15px;
-	background: #ddd;
-	font-size: 17px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  .topnav .search-container button:hover {
-	background: #ccc;
+ 
+
+ #contactBio{ 
+	margin:10px;
+	padding:10px;
+	font-size: 12px;
+	color:#377099;
+
   }
 
-/*side*/
+  #contactBio:hover{
+  	color:#66A2CC;
+  }
+  /*side*/
 
 .sidebox{
 
@@ -215,9 +210,6 @@ img{
 	position:absolute;
 	margin:10px;
 	padding:10px;
-
-
-
 	height:auto;
 	width:100%;
 	background: #e6e6e6;

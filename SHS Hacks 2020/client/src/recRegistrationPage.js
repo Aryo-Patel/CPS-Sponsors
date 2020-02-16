@@ -5,6 +5,7 @@ const passwordForm = document.querySelector('#rpassword')
 const emailForm = document.querySelector('#remail')
 const phonenumberForm = document.querySelector('#rphonenumber')
 const streetForm = document.querySelector('#rstreet')
+const schoolForm = document.querySelector('#rschool')
 const twoaddressForm = document.querySelector('#rtwoaddress')
 const intHeader = document.querySelector('#donHeader')
 const donationsWrap = document.querySelector('#firstDonation')
@@ -27,7 +28,7 @@ const biography = document.querySelector('#bio').value
 
 let type = Array.from(document.querySelectorAll('.type'))
 let quant = Array.from(document.querySelectorAll('.quantity'))
-let isDonor = false;
+let isDonor = 'false';
 let donationArr = [
     ['donation'],
     ['type'],
@@ -97,7 +98,14 @@ Array.from(interestSelect).forEach(dropdowns => {
 
 let quantcounter = 0;
 let typecounter = 0;
+let halt = false;
 submit.addEventListener('click', function(event) {
+    if (quant.length == 0) {
+        halt = true;
+        alert('Please select a donation type')
+    }
+    type = Array.from(document.querySelectorAll('.type'))
+    quant = Array.from(document.querySelectorAll('.quantity'))
     rname = nameForm.value
     rusername = usernameForm.value
     rpassword = passwordForm.value
@@ -106,7 +114,7 @@ submit.addEventListener('click', function(event) {
     rstreet = streetForm.value
     rtwoaddress = twoaddressForm.value
     for (i = 0; i < quant.length; i++) {
-        console.log(type[i - quantcounter + typecounter].value)
+
         if (quant[i].parentNode.previousElementSibling.innerHTML == 'Money') {
             donationArr[1].push(null)
 
@@ -120,8 +128,9 @@ submit.addEventListener('click', function(event) {
     Array.from(quant).forEach(quantity => {
         donationArr[2].push(quantity.value)
     })
-    var information = { "isDonor": '', "name": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
+    var information = { "isDonor": '', "name": '', "school": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
     information['password'] = rpassword;
+    information['school'] = rschool;
     information["name"] = rname;
     information["isDonor"] = isDonor;
     information['donations'] = donationArr;
@@ -132,6 +141,9 @@ submit.addEventListener('click', function(event) {
     information['twoaddress'] = rtwoaddress;
     information['biography'] = biography
     localStorage.setItem(rusername, JSON.stringify(information));
-    console.log(information)
+    console.log(information);
+    if (!halt) {
+        window.location.href = 'LogInPage.html';
+    }
 });
 /** alex */

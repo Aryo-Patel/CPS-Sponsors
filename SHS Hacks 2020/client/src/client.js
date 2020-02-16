@@ -29,7 +29,7 @@ function addToList(e) {
 
         // li.append(h1);
         // document.getElementById('posts').appendChild(li);
-        let user = localStorage.key(0);
+        let user = localStorage.getItem("currentUser");
         sock.emit('textToWrite', text, user);
     }
 

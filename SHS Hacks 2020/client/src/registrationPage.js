@@ -67,8 +67,9 @@ submit.addEventListener('click', function(event) {
     name = nameForm.value
     username = usernameForm.value
     password = passwordForm.value
-    var information = { "isDonor": '', "password": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '' };
+    var information = { "isDonor": '', "name": '', "password": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '' };
     information['password'] = password;
+    information["name"] = name;
     information["isDonor"] = isDonor;
     information['interests'] = interestArr;
     information['email'] = email;

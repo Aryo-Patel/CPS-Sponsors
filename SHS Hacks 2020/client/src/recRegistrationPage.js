@@ -120,8 +120,9 @@ submit.addEventListener('click', function(event) {
     Array.from(quant).forEach(quantity => {
         donationArr[2].push(quantity.value)
     })
-    var information = { "isDonor": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
+    var information = { "isDonor": '', "name": '', "password": '', "donations": '', "interests": '', "email": '', "phonenumber": '', "street": '', "twoaddress": '', "biography": '' };
     information['password'] = rpassword;
+    information["name"] = rname;
     information["isDonor"] = isDonor;
     information['donations'] = donationArr;
     information['interests'] = interestArr;

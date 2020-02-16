@@ -16,7 +16,8 @@ function validate(){
     else if (password == JSON.parse(localStorage.getItem(username))["password"]){
         alert("Login Successful");
         console.log("hello");
-        window.location = "success.html" //This is going to redirect them to another page
+        console.log(window.location);
+        window.location = "http://localhost:8080" //This is going to redirect them to another page
         return false;
     }
     else{

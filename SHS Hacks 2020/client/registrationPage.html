@@ -1,68 +1,76 @@
 <!DOCTYPE html>
-    <html>
+<html>
 
-    <head>
-        <title>Registration</title>
-        <link rel='stylesheet' href='registrationPage.css'>
-    </head>
+<head>
+    <title>Registration</title>
+    <link rel='stylesheet' href='registrationPage.css'>
+</head>
 
-    <body>
-        <div class="grid-container">
-            <div class="item1">Registration</div>
-            <div class="item2">
-                <h2 id=log>Login Information</h3>
-                          <form id=registration>
-                              <div id=userPass>
-                                  <h4>Full Name</h4>
-                                  <input id=name placeholder='Name...'> <br>
-                                  <h4>Username</h4>
-                                  <input id=username placeholder='Username...'> <br>
-                                  <h4>Password</h4>
-                                  <input id=password placeholder='Password...'> <br>
-                                  <h4>Email<h4>
-                                    <input id=email placeholder='Email...'>
-                                    <h4>Phone Number<h4>
-                                    <input id=phonenumber placeholder='Phone Number...'>
-                                    <h4>Address<h4>
-                                    <input id=street placeholder='Street Address...'>
-                                    <input id=twoaddress placeholder='City, State, Zip Code...'>
-                              </div>
-                          </form>
-            </div>  
-            <div class="item3"><div id=interests>
-                              <div id=firstInterest>
-                                  <h4 id=interesthead>Pick Interest(s)</h4>
+<body>
+    <div class="grid-container">
+        <div class="item1">Registration</div>
+        <div class="item2">
+            <h2 id=log>Login Information</h3>
+                <form id=registration>
+                    <div id=userPass>
+                        <h4 id=mobile>Full Name</h4>
+                        <input type=text id=name placeholder='Name...' class='userpassform'> <br>
+                        <h4>Username</h4>
+                        <input type=text id=username placeholder='Username...' class='userpassform'> <br>
+                        <h4>Password</h4>
+                        <input type=text id=password placeholder='Password...' class='userpassform'> <br>
+                        <h4>Email
+                            <h4>
+                                <input type=text id=email placeholder='Email...' class='userpassform'>
+                                <h4>Phone Number
+                                    <h4>
+                                        <input type=text id=phonenumber placeholder='Phone Number...' class='userpassform'>
+                                        <h4>Address
+                                            <h4>
+                                                <input type=text id=street placeholder='Street Address...' class='userpassform'>
+                                                <input type=text id=twoaddress placeholder='City, State, Zip Code...' class='userpassform'>
+                                                <h4>Biography for Sponsor</h4>
+                                                <textarea id=bio placeholder='Type your biography here (optional for sponsors)...' rows='4' cols='50'> </textarea><br>
+                    </div>
+                </form>
+        </div>
+        <div class="item3">
+            <h2 id=log2>Interest Information</h2>
+            <div id=interests>
+                <div id=firstInterest>
+                    <h4 id=interesthead>Pick Interest(s)</h4>
 
-                                  
 
-                                  <div id=intDropDown>
-                                      
-                                          <div id=alltext class=intclick>Undecided</div>
-                                     
-                                      
-                                          <div id=stemtext class=intclick>STEM Clubs</div>
-                                      
-                                      
-                                          <div id=sportsText class=intclick>Athletics</div>
-          
-                                      
-                                          <div id=academicText class=intclick>Academic Clubs</div>
-          
-                                      
-                                          <div id=communityText class=intclick>Community Clubs</div>
-          
-                                      
-                                      </div>
 
-                                  <div id=selectedInterests>
-                                      <h4>Selections</h4>
-                                  </div>
-                                  </div>
-                              </div></div>
-            <div class="item4"><button id=submit>Submit</button></div>
-          </div>
+                    <div id=intDropDown>
 
-        <script src='registrationPage.js'></script>
-    </body>
+                        <h4 id=alltext class=intclick>Undecided</h4>
 
-    </html>
+
+                        <h4 id=stemtext class=intclick>STEM Clubs</h4>
+
+
+                        <h4 id=sportsText class=intclick>Athletics</h4>
+
+
+                        <h4 id=academicText class=intclick>Academic Clubs</h4>
+
+
+                        <h4 id=communityText class=intclick>Community Clubs</h4>
+
+
+                    </div>
+
+                    <div id=selectedInterests>
+                        <h5>Selections</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item4"><button id=submit>Submit</button></div>
+    </div>
+
+    <script src='src/registrationPage.js'></script>
+</body>
+
+</html>
